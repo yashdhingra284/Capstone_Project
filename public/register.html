@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register | Auth App</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-auth-compat.js"></script>
+
+  <script>
+    // Same Firebase config
+const firebaseConfig = {
+  apiKey: "AIzaSyCvLu-B-49jOgU5N0ID6tpWZrhScGO13PQ",
+  authDomain: "ydts-2058b.firebaseapp.com",
+  projectId: "ydts-2058b",
+  storageBucket: "ydts-2058b.firebasestorage.app",
+  messagingSenderId: "869058319921",
+  appId: "1:869058319921:web:a652bacac495040b5c2710",
+  measurementId: "G-GVY872SBVT"
+};
+    firebase.initializeApp(firebaseConfig);
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-box">
+      <h2>Create Account ✨</h2>
+      <p>Register with your details</p>
+
+      <form id="registerForm">
+        <div class="input-group">
+          <label>Full Name</label>
+          <input type="text" id="regName" placeholder="Your full name" required />
+        </div>
+
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" id="regEmail" placeholder="Your email" required />
+        </div>
+
+        <div class="input-group">
+          <label>Password</label>
+          <input type="password" id="regPassword" placeholder="Create password" required />
+        </div>
+
+        <button type="submit" class="btn">Register</button>
+
+        <p class="switch-text">Already have an account? <a href="index.html">Login here</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

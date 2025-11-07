@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* 🌟 Container & Box */
+.container {
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+}
+
+.form-box {
+  backdrop-filter: blur(15px);
+  background: rgba(45, 45, 45, 0.85);
+  border: 1px solid rgba(255, 140, 60, 0.3);
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  animation: slideUp 0.7s ease;
+  color: #fff;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h2 {
+  text-align: center;
+  color: #ff8c3c;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: center;
+  color: #d4d4d4;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+/* 🌸 Input Fields */
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  color: #d4d4d4;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1.5px solid rgba(255, 140, 60, 0.3);
+  border-radius: 8px;
+  background: rgba(60, 60, 60, 0.6);
+  color: white;
+  outline: none;
+  transition: 0.3s;
+}
+
+input::placeholder {
+  color: rgba(200, 200, 200, 0.5);
+}
+
+input:focus {
+  border-color: #ff8c3c;
+  background: rgba(70, 70, 70, 0.8);
+  box-shadow: 0 0 10px rgba(255, 140, 60, 0.3);
+}
+
+/* ✨ Buttons */
+.btn {
+  width: 100%;
+  background: linear-gradient(135deg, #ff8c3c, #e67325);
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.btn:hover {
+  transform: translateY(-2px) scale(1.03);
+  background: linear-gradient(135deg, #e67325, #ff8c3c);
+  box-shadow: 0 6px 15px rgba(255, 140, 60, 0.5);
+}
+
+/* 🧍 Social Buttons */
+.divider {
+  text-align: center;
+  color: rgba(200, 200, 200, 0.7);
+  margin: 20px 0;
+  position: relative;
+  font-size: 14px;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  position: absolute;
+  width: 40%;
+  height: 1px;
+  background: rgba(255, 140, 60, 0.3);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+.social-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  margin: 8px 0;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Google */
+.google {
+  background: #4a4a4a;
+  color: #fff;
+  border: 1px solid rgba(255, 140, 60, 0.3);
+}
+
+.google:hover {
+  background: #5a5a5a;
+  transform: scale(1.03);
+}
+
+/* Facebook */
+.facebook {
+  background: #3a3a3a;
+  border: 1px solid rgba(255, 140, 60, 0.3);
+}
+
+.facebook:hover {
+  background: #4a4a4a;
+  transform: scale(1.03);
+}
+
+/* GitHub */
+.github {
+  background: #2f2f2f;
+  border: 1px solid rgba(255, 140, 60, 0.3);
+}
+
+.github:hover {
+  background: #3a3a3a;
+  transform: scale(1.03);
+}
+
+
+/* 💜 Bottom Text */
+.switch-text {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 14px;
+  color: #d4d4d4;
+}
+
+.switch-text a {
+  color: #ff8c3c;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.switch-text a:hover {
+  text-decoration: underline;
+  color: #e67325;
+}
